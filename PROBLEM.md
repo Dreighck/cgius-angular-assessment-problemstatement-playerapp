@@ -8,10 +8,10 @@
 
 1. The app is composed of 1 Module with 3 Components, 1 Service and 1 Player Model Class. 
 
-            - AppModule (Bootsrapping module that contains all the components)
-			- Components (AppComponent, HeaderComponent and DashboardComponent)
-			- Service (PlayerService)  
-            - Player Model class with details player id, name,country and noOfMatchesPlayed
+	- AppModule (Bootsrapping module that contains all the components)
+	- Components (AppComponent, HeaderComponent and DashboardComponent)
+	- Service (PlayerService)  
+	- Player Model class with details player id, name,country and noOfMatchesPlayed
 
 2. AppComponent is the RootComponent and should contain HeaderComponent and DashboardComponent
 
@@ -23,13 +23,13 @@
 
 6. PlayerService should provide below functionalities.
  
-			- getPlayers() - Performs the API call using HttpClient get() and returns the Observable of Player[].
-			- addPlayer() - Performs the API call using HttpClient post() and returns the Observable of Player.  
+	- getPlayers() - Performs the API call using HttpClient get() and returns the Observable of Player[].
+	- addPlayer() - Performs the API call using HttpClient post() and returns the Observable of Player.  
 
 7. Use json-server to set up a fake REST Service to provide below endpoints for API calls.
 
-			- GET - http://localhost:3000/players - get all the Players
-			- POST - http://localhost:3000/players - add a new  Player
+	- GET - http://localhost:3000/players - get all the Players
+	- POST - http://localhost:3000/players - add a new  Player
 
 ## Submission:
 
