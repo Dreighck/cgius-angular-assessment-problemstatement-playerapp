@@ -1,0 +1,48 @@
+
+
+<!-- add a new employee -->
+
+<div class="form-container">
+    <p>{{this.errorMessage}}</p>
+    <mat-form-field appearance="outline">
+        <mat-label>Player ID</mat-label>
+        <input matInput placeholder="Enter the player ID" [(ngModel)]="player.id">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Player Name</mat-label>
+        <input matInput placeholder="Enter the Player Name" [(ngModel)]="player.firstName">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Country</mat-label>
+        <input matInput placeholder="Enter the country" [(ngModel)]="player.country">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Matches Played</mat-label>
+        <input matInput placeholder="Enter the number of matches played" [(ngModel)]="player.noOfMatchesPlayed" >
+      </mat-form-field>
+    <button (click)="add()" mat-raised-button color="primary">Add Player</button>
+</div>
+
+<!-- display all employees -->
+<div class="card-container">
+    <div *ngFor="let player of players">
+
+ <mat-card class="player-card">
+            <mat-card-header>
+              <mat-card-title> {{player.firstName}} </mat-card-title>
+              <mat-card-subtitle> {{player.country}} </mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+              <p>
+                  {{player.firstName}} is playing for {{player.country}} with a total of
+                  {{player.noOfMatchesPlayed}} matches played.
+              </p>
+            </mat-card-content>
+            <mat-card-actions> </mat-card-actions>
+          </mat-card>
+    </div>
+</div>
+
+
+
