@@ -15,7 +15,7 @@
 
 2. AppComponent is the RootComponent and should contain HeaderComponent and DashboardComponent
 
-3. HeaderComponent contain the 'Navbar' and should display the App Title, which is, "PlayerApp".
+3. HeaderComponent contain the 'MatToolbar' and should display the App Title, which is, "PlayerApp".
 
 4. DashboardComponent should display the players along with their details as cards (one for each player) and provides input fields, as interface for the user, to add the details of a new Player to the server.
 
